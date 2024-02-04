@@ -1,12 +1,11 @@
 /*henviser til filerne i mappen "funktionalitet"*/
-@import url('funktionalitet/farver.css');
-@import url('funktionalitet/knapper.css');
-@import url('funktionalitet/typografi.css');
+@import url('./funktionalitet/farver.css');
+@import url('./funktionalitet/knapper.css');
+@import url('./funktionalitet/typografi.css');
 
 /*henviser til filerne i mappen "moduler"*/
-@import url('moduler/footer.css');
-@import url('moduler/header.css');
-@import url('moduler/navigation.css');
+@import url('./moduler/footer.css');
+@import url('./moduler/header.css');
 
 /*henviser til filerne i mappen "sider"*/
 @import url('sider/cases.css');
@@ -14,3 +13,10 @@
 @import url('sider/kontakt.css');
 @import url('sider/services.css');
 @import url('sider/team.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
