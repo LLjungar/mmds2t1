@@ -1,0 +1,89 @@
+Det her er indholdet:
+
+HTML-filer:
+cases.html
+index.html
+kontakt.html
+services.html
+team.html
+
+JavaScript-fil:
+burger-menu.js
+
+SCSS-filer:
+Base:
+_variables.scss
+
+Components:
+_footer.scss
+_header.scss
+
+Layouts:
+_desktop.scss
+_mobile.scss
+_tablet.scss
+
+Main SCSS-fil:
+styles.scss
+
+
+
+
+Sådan her fungerer det: 
+
+MMDS2T1
+|-- /Pages
+|   |-- burger-menu.js
+|   |-- cases.html
+|   |-- index.html
+|   |-- kontakt.html
+|   |-- services.html
+|   |-- team.html
+|
+|-- /Styles
+|   |-- /scss
+|   |   |-- /components
+|   |   |   |-- _footer.scss    <-- Tidligere footer.css
+|   |   |   |-- _header.scss    <-- Tidligere header.css
+|   |   |
+|   |   |-- /layouts
+|   |   |   |-- _desktop.scss   <-- Tidligere desktop.css
+|   |   |   |-- _mobile.scss    <-- Tidligere mobile.css
+|   |   |   |-- _tablet.scss    <-- Tidligere tablet.css
+|   |   |
+|   |   |-- /base
+|   |   |   |-- _variables.scss  <-- Fx til at definere farver, skriftstørrelser osv.
+|   |   |
+|   |   |-- styles.scss         <-- Hoved SCSS-fil, som importerer alle partials
+|   |
+|   |-- styles.css              <-- Kompileret CSS-fil fra styles.scss
+
+
+
+
+
+Ren struktur før kompilering: 
+
+MMDS2T1
+|-- /Pages
+|   |-- burger-menu.js
+|   |-- cases.html
+|   |-- index.html
+|   |-- kontakt.html
+|   |-- services.html
+|   |-- team.html
+|
+|-- /Styles
+|   |-- /components
+|   |   |-- _footer.scss   
+|   |   |-- _header.scss    
+|   |
+|   |-- /layouts
+|   |   |-- _desktop.scss   
+|   |   |-- _mobile.scss    
+|   |   |-- _tablet.scss    
+|   |
+|   |-- /base
+|   |   |-- _variables.scss 
+|   |-- styles.scss         
+

@@ -1,0 +1,11 @@
+// Henviser til filerne i mappen "base"
+@import 'base/variables';
+
+// Henviser til filerne i mappen "components"
+@import 'components/footer';
+@import 'components/header';
+
+// Henviser til filerne i mappen "layouts"
+@import 'layouts/desktop';
+@import 'layouts/mobile';
+@import 'layouts/tablet';

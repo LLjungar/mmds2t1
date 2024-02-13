@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* Generel styling herunder */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Funktionalitet */
+/* Farver */
+/* Knapper */
+/* Typografi */
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.header {
+  background-color: black;
+  max-width: 100%;
+  padding: 1em;
+  padding-bottom: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.logo-container {
+  grid-column: 1/3;
+  grid-row: 1/1;
+  color: white;
+}
+
+.menu-container {
+  grid-column: 2/3;
+  grid-row: 1/1;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+}
+
+.linkedin {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding-left: 5em;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    min-height: auto; /* Ændrer headerens højde til at tilpasse indholdet */
+    height: auto; /* Juster height til auto */
+    padding: 1.5em;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu-container {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    padding-left: 5em;
+  }
+  .linkedin {
+    grid-column: 3/3;
+    padding-top: 2em;
+  }
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: blueviolet;
+    top: 0.1em;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .menu-list.show-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: right;
+    height: 50vh;
+    margin: 0;
+    padding: 20px;
+  }
+  .menu-list li {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: #fae5a0;
+  }
+  .mobile-menu-icon {
+    display: block;
+    color: white;
+    font-size: x-large;
+    cursor: pointer; /* Tilføjer dette for at ændre cursoren */
+  }
+}/*# sourceMappingURL=styles.css.map */
